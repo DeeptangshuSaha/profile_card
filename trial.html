@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial || Positioning</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent {
+            background-color: aqua;
+            padding: 30px;
+            height: 100vh;
+        }
+        .child1 {
+            background-color: blue;
+            position: sticky;
+            height: 30px;
+            padding: 20px;
+            top: 0;
+        }
+        .child2 {
+            background-color: blueviolet;
+            position: sticky;
+            height: 30px;
+            margin: 50px;
+            padding: 20px;
+            top: 0;
+        }
+        .child3 {
+            background-color: brown;
+            position: sticky;
+            height: 30px;
+            margin: 50px 93px;
+            padding: 20px;
+            top: 0;
+        }
+        .footer {
+            background-color: chartreuse;
+            position: relative;
+            bottom: 0;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child1">Child1</div>
+        <div class="child2">Child2</div>
+        <div class="child3">Child3</div>
+    </div>
+    <div class="parent">
+        Parent
+        <div class="child1">Child1</div>
+        <div class="child2">Child2</div>
+        <div class="child3">Child3</div>
+    </div>
+    <div class="footer">The End</div>
+</body>
+</html>
